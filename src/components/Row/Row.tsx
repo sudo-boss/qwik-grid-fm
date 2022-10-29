@@ -1,6 +1,6 @@
 // ---Dependencies
 import { component$, Slot } from '@builder.io/qwik';
-import { CSSSAtributes } from 'src/declarations';
+import { CSSSAtributes } from '../../declarations';
 import { RowStyles } from './useStyles';
 // ---UI Dependencies
 // ---Custom Hooks
