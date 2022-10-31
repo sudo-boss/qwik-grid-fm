@@ -1,5 +1,7 @@
 import { generate } from "../../cUtils/functions/valueGenerators"
-
+/**
+ * declasraciones para darle propiedades al CSS
+ */
 export interface Props {
   hSpace?: number;
   vSpace?: number;

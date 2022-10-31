@@ -4,8 +4,8 @@ import { component$ } from '@builder.io/qwik';
 import { Col, Row } from '../../index';
 
 /**
- * ResponsiveUsage Component: Basic implementation of the grid system with "span"
- * @returns
+ * ResponsiveUsage Component: componente en el cual ya se hace uso del Grid responsive
+ * @returns {Component<{}>} Qwik component
  */
 export const ResponsiveUsage = component$(() => {
   // -----------------------CONSTS, HOOKS, STATES
@@ -17,8 +17,6 @@ export const ResponsiveUsage = component$(() => {
     xl: 33,
     xxl: 20
   };
-  // -----------------------MAIN METHODS
-  // -----------------------AUX METHODS
   // -----------------------RENDER
   return (
     <>

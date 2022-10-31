@@ -2,15 +2,12 @@
 import { component$ } from '@builder.io/qwik';
 // ---Components
 import { Col, Row } from '../../index';
-
 /**
  * BasicUsage Component: Basic implementation of the grid system with "span"
- * @returns
+ * he expone un Grid basico estatico en el cual se expone de principio el uso del Row y Col 
+ * @returns {Component<{}>} Qwik component
  */
 export const BasicUsage = component$(() => {
-  // -----------------------CONSTS, HOOKS, STATES
-  // -----------------------MAIN METHODS
-  // -----------------------AUX METHODS
   // -----------------------RENDER
   return (
     <>

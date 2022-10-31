@@ -4,13 +4,10 @@ import { component$ } from '@builder.io/qwik';
 import { Col, Row } from '../../index';
 
 /**
- * NestedUsage Component: Basic implementation of the grid system with "span"
- * @returns
+ * NestedUsage Component: Componente en el cual hacemos anidamiento de componentes 
+ * @returns {Component<{}>} Qwik component
  */
 export const NestedUsage = component$(() => {
-  // -----------------------CONSTS, HOOKS, STATES
-  // -----------------------MAIN METHODS
-  // -----------------------AUX METHODS
   // -----------------------RENDER
   return (
     <>

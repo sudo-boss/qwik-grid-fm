@@ -1,5 +1,9 @@
+// ---Utils
 import { generate } from "../../cUtils/functions/valueGenerators"
-
+/**
+ * GridSystem: utilizamos las medidas promedio de las 
+ * pantallas en las que se puede renderear nuestra Pagina
+ */
 export interface GridSystem {
   span?: number;
   xs?: number;
@@ -70,7 +74,10 @@ export const ColStyles = (gridInfo: GridSystem) => {
   `
   return { parentClassName, styles }
 }
-
+/**
+ * colWidthBalancer: declaraciones explictias del porcentaje que 
+ * oucpara caada tamaño de pagina 
+ */
 export function colWidthBalancer(gridInfo: GridSystem) {
   const { span, xs, sm, md, lg, xl, xxl } = gridInfo;
   return {

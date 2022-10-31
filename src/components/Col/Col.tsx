@@ -1,23 +1,19 @@
 // ---Dependencies
 import { component$, Slot } from '@builder.io/qwik';
 import { ColStyles, GridSystem } from './useStyles';
-// ---UI Dependencies
-// ---Custom Hooks
-// ---Redux
-// ---Components
-// ---AppConfig
-// ---Assets
-// ---Utils
-// ---Requests
-// ---Images
-
-
+/**
+ * Props Props: inyeccion de propiedades con el GridSystem
+ * usasamos el Classname para asi poder 
+ */
 interface Props extends GridSystem {
   className?: string;
   style?: any;
 }
 /**
- * SimpleComp Component: Do something
+ * Col Component: este componente solo recibe la Propiedad de
+ * responsiveGrid la cual es la encargada de verificar el 
+ * tamaño en que que se encuantra la Pagina 
+ * @returns {Component<{}>} Qwik component
  */
 export const Col = component$((props: Props) => {
   // -----------------------CONSTS, HOOKS, STATES
@@ -25,7 +21,6 @@ export const Col = component$((props: Props) => {
   const styleData = ColStyles({ ...grid });
 
   const demo = {
-    // background: background || 'trans',
     textAlign: 'center'
   };
 
@@ -33,9 +28,6 @@ export const Col = component$((props: Props) => {
     ...demo,
     ...props?.style,
   };
-  // console.log(style);
-  // -----------------------MAIN METHODS
-  // -----------------------AUX METHODS
   // -----------------------RENDER
   return (
     <>

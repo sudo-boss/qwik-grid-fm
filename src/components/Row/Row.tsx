@@ -2,15 +2,6 @@
 import { component$, Slot } from '@builder.io/qwik';
 import { CSSSAtributes } from '../../declarations';
 import { RowStyles } from './useStyles';
-// ---UI Dependencies
-// ---Custom Hooks
-// ---Redux
-// ---Components
-// ---AppConfig
-// ---Assets
-// ---Utils
-// ---Requests
-// ---Images
 
 interface Props {
   hAlign?: 'center' | 'start' | 'end';
@@ -22,8 +13,12 @@ interface Props {
   style?: any;
 }
 /**
- * SimpleComp Component: Do something
- * @returns {ReactElement}
+ * Row Component: aqui declaramos las propiedas a las cuales va
+ * a tener acceso y control de los elementos dentro de el (espaciados
+ * y aliniamientos), podemos acceder a la propieddad "debug" la cual 
+ * es una herramienta de ayuda para poder ver el comportamiento de los
+ * elementos
+ * @returns {Component<{}>} Qwik component
  */
 export const Row = component$((props: Props) => {
   // -----------------------CONSTS, HOOKS, STATES
@@ -35,9 +30,6 @@ export const Row = component$((props: Props) => {
     verticalAlign: props?.vAlign || 'bottom',
     ...styledProp
   }
-
-  // -----------------------MAIN METHODS
-  // -----------------------AUX METHODS
   // -----------------------RENDER
   return (
     <>

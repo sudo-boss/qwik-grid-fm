@@ -2,10 +2,10 @@
 import { component$ } from '@builder.io/qwik';
 // ---Components
 import { Col, Row } from '../../index';
-
 /**
- * MassiveElementsUsage Component: Basic implementation of the grid system with "span"
- * @returns
+ * MassiveElementsUsage Component: Componente en el cual demostramos
+ * una multitud de Columnas, y su performance en el rendereo
+ * @returns {Component<{}>} Qwik component
  */
 export const MassiveElementsUsage = component$(() => {
   // -----------------------CONSTS, HOOKS, STATES
@@ -25,7 +25,6 @@ export const MassiveElementsUsage = component$(() => {
   for (let i = 0; i < 100; i++) {
     cols.push(i + 1);
   }
-  // -----------------------AUX METHODS
   // -----------------------RENDER
   return (
     <>
