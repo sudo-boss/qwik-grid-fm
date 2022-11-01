@@ -1,18 +1,28 @@
 // ---Utils
 import { generate } from "../../cUtils/functions/valueGenerators"
-/**
- * GridSystem: utilizamos las medidas promedio de las 
- * pantallas en las que se puede renderear nuestra Pagina
- */
+
 export interface GridSystem {
+  /**Static width of the "Col"*/
   span?: number;
+  /**Width of the "Col" in extra small devices (0 - 576px)*/
   xs?: number;
+  /**Width of the "Col" in small devices (576px - 768px)*/
   sm?: number;
+  /**Width of the "Col" in mid devices (768px - 992px)*/
   md?: number;
+  /**Width of the "Col" in large devices (992px - 1200px)*/
   lg?: number;
+  /**Width of the "Col" in extra large devices (1200px - 1600px)*/
   xl?: number;
+  /**Width of the "Col" in extra extra large devices (1600px and beyond)*/
   xxl?: number;
 }
+
+/**
+ * Generate unique styles for the specific Col depending on the properties for the Col
+ * @param {Props} props - Props for handle the width of the cols
+ * @returns {UniqueCSS} CSS styles
+ */
 export const ColStyles = (gridInfo: GridSystem) => {
   // ----UNIQUE SELECTOR
   const unique = generate.uniqueString();
@@ -37,7 +47,7 @@ export const ColStyles = (gridInfo: GridSystem) => {
       }
     }
 
-    /* xl: Pantallas grandes (desktops de menos de 1200px) */
+    /* xl: Pantallas grandes (desktops de menos de 1600px) */
     @media (max-width: 1599px) {
       .${parentClassName} {
         width: calc(${xl}% - var(--hSpace) * 2);

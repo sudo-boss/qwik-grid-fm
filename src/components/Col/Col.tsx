@@ -1,18 +1,17 @@
 // ---Dependencies
 import { component$, Slot } from '@builder.io/qwik';
 import { ColStyles, GridSystem } from './useStyles';
-/**
- * Props Props: inyeccion de propiedades con el GridSystem
- * usasamos el Classname para asi poder 
- */
+
 interface Props extends GridSystem {
   className?: string;
   style?: any;
 }
+
 /**
- * Col Component: este componente solo recibe la Propiedad de
- * responsiveGrid la cual es la encargada de verificar el 
- * tamaño en que que se encuantra la Pagina 
+ * Col Component: Container that allows you handle all your grid content controlling it 
+ * based in a percentage way instead of classic 12 or 24 columns per row allowing you 
+ * to handle up to 100 columns per row.
+ * @param {Props} props Properties that controls the width of your "Cols" in percentage with static width (span) or with responsive behaviors(xs, sm, md lg, xl, xxl)
  * @returns {Component<{}>} Qwik component
  */
 export const Col = component$((props: Props) => {

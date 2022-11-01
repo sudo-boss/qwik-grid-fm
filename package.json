@@ -1,6 +1,6 @@
 {
   "name": "qwik-grid-fm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Awesome responsive grid system for Qwik :) that allows you to control the grid based on percentage instead of clasic 12 or 24 columns we use percentage",
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
@@ -48,5 +48,24 @@
     "prettier": "2.7.1",
     "typescript": "4.8.4",
     "vite": "3.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudo-boss/qwik-grid-fm.git"
+  },
+  "keywords": [
+    "responsive",
+    "Builder.io",
+    "qwik",
+    "css",
+    "frontend",
+    "grid",
+    "grid-system"
+  ],
+  "author": "sb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudo-boss/qwik-grid-fm/issues"
+  },
+  "homepage": "https://github.com/sudo-boss/qwik-grid-fm#readme"
 }
