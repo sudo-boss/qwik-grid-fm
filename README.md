@@ -1,47 +1,22 @@
-# Qwik Library ⚡️
+# Qwik Grid Library ⚡️
 
-- [Qwik Docs](https://qwik.builder.io/)
-- [Discord](https://qwik.builder.io/chat)
-- [Qwik Github](https://github.com/BuilderIO/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
-- [Partytown](https://partytown.builder.io/)
-- [Mitosis](https://github.com/BuilderIO/mitosis)
-- [Builder.io](https://www.builder.io/)
+-Library in which its main objective is to have the greatest control of the behavior for the grid in qwik.
 
----
+-Row and Col are used so it will be very familiar if you have already interacted with Ant Desing, Boostrap, etc.
+the Grid is handled by percentage with 100% referring to the maximum.
 
-## Project Structure
+-The Row and Col can receive properties which help us to have greater control of these.
 
-Inside of you project, you'll see the following directories and files:
+# Qwik Grid Installation
 
 ```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── index.ts
+npm i qwik-grid-fm
 ```
 
-- `src/components`: Recommended directory for components.
+# Pd:
 
-- `index.ts`: This is the entry point of your component library, make sure all the public components are exported from this file.
+-Thanks for using the library if you like to make a contribution or comment you can write to us at sbarquet@forgemytech.com
 
-## Development
+## goodbye world 
+:feelsgood:
 
-Development mode uses [Vite's development server](https://vitejs.dev/). For Qwik during development, the `dev` command will also server-side render (SSR) the output. The client-side development modules loaded by the browser.
-
-```
-npm run dev
-```
-
-> Note: during dev mode, Vite will request many JS files, which does not represent a Qwik production build.
-
-## Production
-
-The production build should generate the production build of your component library in (./lib) and the typescript type definitions in (./lib-types).
-
-```
-npm run build
-```
