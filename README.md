@@ -15,7 +15,7 @@ npm i qwik-grid-fm
 
 # Pd:
 
--Thanks for using the library if you like to make a contribution or comment you can write to us at sbarquet@forgemytech.com
+-Check the docs and examples at [https://qwik.forgemytech.com/](https://qwik.forgemytech.com/)
 
 ## goodbye world 
 :feelsgood:
